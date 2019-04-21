@@ -1,5 +1,8 @@
+# 15 Marketing Sample
 
-##Build image:
+That's the execution of sample interview task for 15 Marketing.
+
+## Build image:
 
 `docker build . -t 15marketingbuild `
 
