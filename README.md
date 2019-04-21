@@ -14,3 +14,6 @@ That's the execution of sample interview task for 15 Marketing.
 
 `curl --data-binary '@sample/enter.xml' localhost:8080`
 
+## Run PHPUnit tests
+
+`./vendor/bin/phpunit --bootstrap vendor/autoload.php tests`
