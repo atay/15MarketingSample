@@ -39,7 +39,7 @@ class File {
         $pathArray = explode(".", $path);
         $currentContent = $this->getContent();
         foreach ($pathArray as $pathElement) {
-            if (array_key_exists($pathElement, $currentContent)) {
+            if (is_array($currentContent) && array_key_exists($pathElement, $currentContent)) {
                 $currentContent = $currentContent[$pathElement];
             } else {
                 return null;
