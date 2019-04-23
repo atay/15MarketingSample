@@ -6,13 +6,13 @@ abstract class Base {
 
     private $inputFile;
     private $response;
-    private $dbRepository;
+    private $repository;
 
 
-    public function __construct($inputFile, &$response, $dbRepository) {
+    public function __construct($inputFile, &$response, $repository) {
         $this->inputFile = $inputFile;
         $this->response = $response;
-        $this->dbRepository = $dbRepository;
+        $this->repository = $repository;
     }
 
     abstract public function process();

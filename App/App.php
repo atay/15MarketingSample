@@ -8,8 +8,8 @@ class App
     {
         $response = new Response();
         $inputFile = InputFile\Parser::parsePath('php://input');
-        $dbRepository = new DbRepository();
-        $command = Factory::createCommand($inputFile, $response, $dbRepository);
+        $repository = Factory::createActionRepository($inputFile);
+        $command = Factory::createCommand($inputFile, $response, $repository);
         $command->process();
         $response->flush();
     }
